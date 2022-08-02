@@ -1,0 +1,14 @@
+first command 
+> whoami - returns the username
+
+>cd-current dictionary
+  -cd/? - all the cs related commands will print.
+  -cd/newdirectorypath - you can change the directory using this.
+  -cd.. - this helps you gat back.
+
+>dir-list all the folders and files in current directory.
+
+>mkdir- to make a new directory.
+
+>rmdir or del - delete directory.
+
