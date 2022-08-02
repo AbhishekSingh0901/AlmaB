@@ -1,0 +1,12 @@
+Use same email id in local git configuration.
+  git config --global user.name <<your name>>
+  git config --global user.email <<your email id>>
+
+Verify this email & username
+  git config - -get user.email
+  git config - -get user.name
+
+1)git add - adding new file in repository
+2)git commit - saving the changes in local repository
+3)git status - used to check the status of cuurent rep (if there are and unsaved changes)
+4)git push - saves all the changes in cloud repo too.
