@@ -111,3 +111,60 @@ studentsData.forEach((student) => {
     console.log(data);
   });
 });
+
+/*Assignment:
+  1. Joining elements
+    Input:
+  let myColor = ["Red", "Green", "White", "Black"];
+
+  Output:
+  Red,Green,White,Black Red+Green+White+Black
+
+  Explanation:
+  Performed join operation on the elements of array first without 
+  anything between elements and then with '+' sign in between.
+*/
+
+let myColor = ["Red", "Green", "White", "Black"];
+console.log(myColor.join());
+console.log(myColor.join("+"));
+
+/* 
+  2. UpperCase Array
+
+  Input:
+  let strings = ["avengers", "captain america", "ironman", "black panther"];
+
+  Output:
+  ["AVENGERS","CAPTAIN AMERICA","IRONMAN","BLACK PANTHER"]
+
+  Explanation:
+  Converted every element of the array to uppercase and stored in the array, hence the output.
+*/
+
+let strings = ["avengers", "captain america", "ironman", "black panther"];
+console.log(strings.map((strings) => strings.toUpperCase()));
+
+const inputWords = [
+  "spray",
+  "limit",
+  "elite",
+  "exuberant",
+  "destruction",
+  "present",
+];
+console.log(inputWords.filter((words) => words.length > 6));
+
+const heros = [
+  { name: "Spider-Man" },
+  { name: "Thor" },
+  { name: "Black Panther" },
+  { name: "Captain Marvel" },
+  { name: "Silver Surfer" },
+];
+
+const heroarr = heros.map((hero, index) => {
+  return { id: index, hero: hero.name };
+});
+
+console.log(heroarr);
