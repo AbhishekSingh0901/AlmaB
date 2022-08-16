@@ -100,3 +100,42 @@ console.log(data.hobby); // { gaming: false, reading: true, sport: "football"}
 console.log(data.hobby.sport); // football
 console.log(data.class[1]); // HTML
 */
+
+//Assignment
+
+let person = {
+  name: "John",
+  JobTitle: "Developer",
+  email: "almabetter.com",
+  isVerified: false,
+};
+
+delete person.name;
+person.firstname = "John";
+person.lastname = "Doe";
+
+console.log(person);
+
+const userDetails = {
+  name: { first: "Kapil", last: "Raghuwanshi" },
+  jobTitle: "JS Instructor@Almabetter.com",
+  email: { work: "kapil@google.com", personal: "" },
+  status: { isOnline: true, isVerified: false },
+};
+
+userDetails.name.first = "John";
+userDetails.name.last = "Snow";
+
+userDetails.isProMember = false;
+
+console.log(userDetails);
+
+const userActivity3 = {
+  Aname: "Rahul",
+  jobTitle: "JS Instructor@almabetter.com",
+  work: "rahul@microsoft.com",
+  region: "Hydrabad",
+};
+
+const { Aname, jobTitle, work } = userActivity3;
+console.log(Aname, jobTitle, work);
