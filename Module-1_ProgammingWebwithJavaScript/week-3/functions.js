@@ -79,3 +79,8 @@ function countdown(num) {
 }
 
 countdown(6);
+
+const a = require("./oop_introduction");
+
+a.contact("ab", 22);
+a.add(3, 4);
