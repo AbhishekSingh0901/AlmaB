@@ -70,17 +70,18 @@ function Person(firstName, lastName, age, eyecolor) {
   this.age = age;
   this.eyeColor = eyecolor;
 }
+
 Person.prototype.nationality = "India";
 
-console.log(Person);
-Person.firstName = "abhi";
-Person.lastName = "singh";
+const me = new Person("abhi", "singh", 22, "brown");
 
-Person.names = function () {
+console.log("my natinality is ", me.nationality);
+
+Person.prototype.name = function () {
   return this.firstName + " " + this.lastName;
 };
 
-console.log(Person.nationality);
+console.log("my name is ", me.name());
 
 //Inheritence
 
@@ -138,3 +139,13 @@ class Model extends Car {
 
 const myCar = new Model("Ford", "Germany", "Mustang");
 console.log(myCar.show());
+
+function contact(name, age) {
+  console.log(`${name} and ${age}`);
+}
+
+function add(num1, num2) {
+  console.log(num1 + num2);
+}
+
+module.exports = { contact, add };
