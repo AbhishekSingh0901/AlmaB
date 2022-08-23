@@ -139,13 +139,3 @@ class Model extends Car {
 
 const myCar = new Model("Ford", "Germany", "Mustang");
 console.log(myCar.show());
-
-function contact(name, age) {
-  console.log(`${name} and ${age}`);
-}
-
-function add(num1, num2) {
-  console.log(num1 + num2);
-}
-
-module.exports = { contact, add };

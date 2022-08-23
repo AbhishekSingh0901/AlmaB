@@ -80,7 +80,9 @@ function countdown(num) {
 
 countdown(6);
 
-const a = require("./oop_introduction");
+// const a = require("./oop_introduction");
 
-a.contact("ab", 22);
-a.add(3, 4);
+import { hello, summ } from "./esModulesAndLibraries";
+
+hello("abhi", 22);
+summ(3, 4);
