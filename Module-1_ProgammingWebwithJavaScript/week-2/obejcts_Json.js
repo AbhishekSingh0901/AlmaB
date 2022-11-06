@@ -1,51 +1,58 @@
-//objects in js is a non primitve datatype the allows to store multiple collection of data with a value and a key
-const person = {
-  name: "Abhi",
-  age: 22,
-  greet: function () {
-    console.log(this.name, "says hello");
-  },
-};
+// // objects in js is a non primitve datatype the allows to store multiple collection of data with a value and a key
+// const person1 = {
+//   name: "Abhi",
+//   age: 22,
+//   greet: function () {
+//     console.log(this.name, "says hello");
+//   },
+// };
 
-person.greet();
+// person1.greet();
+// console.log(person1["name"]);
 
-//nested objests
-const student = {
-  name: "John",
-  age: 23,
-  marks: {
-    science: 81,
-    maths: 92,
-  },
-};
+// if (person1.name) {
+//   person1.name += " Singh";
+//   console.log(person1.name);
+// }
+// //nested objests
+// const student = {
+//   name: "John",
+//   age: 23,
+//   marks: {
+//     science: 81,
+//     maths: 92,
+//   },
+// };
 
-console.log(student.marks.maths);
+// console.log(student.marks.maths);
+// console.log(student["marks"]["maths"]);
 
 //Set - is a collection of unique value and does not have any duplicate values
 const letters = new Set(["a", "b", "c"]);
 
-//to add a value
-letters.add("d");
-console.log(letters);
+// //to add a value
+// letters.add("d");
+// console.log(letters);
 
-//to delete a value
-letters.delete("b");
-console.log(letters);
+// //to delete a value
+// letters.delete("b");
+// console.log(letters);
 
-//to check if the value exsits
-console.log(letters.has("b"));
+// //to check if the value exsits
+// console.log(letters.has("b"));
 
-console.log(letters.values());
+// console.log(letters.values());
 
-console.log(letters.entries());
-// List all entries
-let text = "";
+// //entries() returns [value,value] pairs instead of [key,value] pairs.
+// console.log(letters.entries());
+// // List all entries
+// let text = "";
 
-letters.forEach(function (value) {
-  text += value + " ";
-});
+// letters.forEach(function (value) {
+//   text += value + " ";
+// });
 
-console.log(text);
+// console.log(text);
 
 //Map:
 
@@ -101,41 +108,41 @@ console.log(data.hobby.sport); // football
 console.log(data.class[1]); // HTML
 */
 
-//Assignment
+// //Assignment
 
-let person = {
-  name: "John",
-  JobTitle: "Developer",
-  email: "almabetter.com",
-  isVerified: false,
-};
+// let person = {
+//   name: "John",
+//   JobTitle: "Developer",
+//   email: "almabetter.com",
+//   isVerified: false,
+// };
 
-delete person.name;
-person.firstname = "John";
-person.lastname = "Doe";
+// delete person.name;
+// person.firstname = "John";
+// person.lastname = "Doe";
 
-console.log(person);
+// console.log(person);
 
-const userDetails = {
-  name: { first: "Kapil", last: "Raghuwanshi" },
-  jobTitle: "JS Instructor@Almabetter.com",
-  email: { work: "kapil@google.com", personal: "" },
-  status: { isOnline: true, isVerified: false },
-};
+// const userDetails = {
+//   name: { first: "Kapil", last: "Raghuwanshi" },
+//   jobTitle: "JS Instructor@Almabetter.com",
+//   email: { work: "kapil@google.com", personal: "" },
+//   status: { isOnline: true, isVerified: false },
+// };
 
-userDetails.name.first = "John";
-userDetails.name.last = "Snow";
+// userDetails.name.first = "John";
+// userDetails.name.last = "Snow";
 
-userDetails.isProMember = false;
+// userDetails.isProMember = false;
 
-console.log(userDetails);
+// console.log(userDetails);
 
-const userActivity3 = {
-  Aname: "Rahul",
-  jobTitle: "JS Instructor@almabetter.com",
-  work: "rahul@microsoft.com",
-  region: "Hydrabad",
-};
+// const userActivity3 = {
+//   Aname: "Rahul",
+//   jobTitle: "JS Instructor@almabetter.com",
+//   work: "rahul@microsoft.com",
+//   region: "Hydrabad",
+// };
 
-const { Aname, jobTitle, work } = userActivity3;
-console.log(Aname, jobTitle, work);
+// const { Aname, jobTitle, work } = userActivity3;
+// console.log(Aname, jobTitle, work);
