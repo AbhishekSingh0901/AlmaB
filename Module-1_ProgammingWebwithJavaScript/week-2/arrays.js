@@ -143,7 +143,7 @@ console.log(myColor.join("+"));
 */
 
 let strings = ["avengers", "captain america", "ironman", "black panther"];
-console.log(strings.map((strings) => strings.toUpperCase()));
+console.log(strings.map((string) => string.toUpperCase()));
 
 const inputWords = [
   "spray",
