@@ -7,7 +7,8 @@ under specefic conditions */
 // console.log(3);
 
 // function getData() {
-//   let n = 1000000000;
+//   //blocking function
+//   let n = 10000000000;
 //   while (n > 0) {
 //     n--;
 //   }
@@ -82,16 +83,32 @@ under specefic conditions */
 
 let n = 0;
 
-let interval = setInterval(function () {
-  n += 1;
+// let interval = setInterval(function () {
+//   n += 1;
 
-  if (n === 10) {
-    clearInterval(interval);
-  }
+//   if (n === 10) {
+//     clearInterval(interval);
+//   }
+
+//   let dateTime = new Date();
+
+//   let time = dateTime.toLocaleTimeString();
+
+//   console.log(time);
+// }, 2000);
+
+function showTime() {
+  n++;
 
   let dateTime = new Date();
-
   let time = dateTime.toLocaleTimeString();
-
   console.log(time);
-}, 2000);
+  console.log(n);
+  let id = setTimeout(showTime, 2000);
+
+  if (n === 10) {
+    clearTimeout(id);
+  }
+}
+
+showTime();
