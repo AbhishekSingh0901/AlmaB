@@ -94,14 +94,17 @@ function SuperType() {
 SuperType.prototype.getSuperName = function () {
   return this.name;
 };
+
+let nameProperty = new SuperType();
+console.log(nameProperty.getSuperName());
 //SubType prototype function
 function SubType() {
   this.age = 26;
 }
 
 //Inherit the properties from SuperType
-
 SubType.prototype = new SuperType();
+
 // Add new property to SubType prototype
 SubType.prototype.getSubAge = function () {
   return this.age;
@@ -139,3 +142,34 @@ class Model extends Car {
 
 const myCar = new Model("Ford", "Germany", "Mustang");
 console.log(myCar.show());
+
+//Revising Class and Extends:
+
+class Data {
+  constructor(fisrtName, lastName, age) {
+    this.fisrtName = fisrtName;
+    this.lastName = lastName;
+    this.age = age;
+  }
+
+  noramlInformation() {
+    return `Hi! i am ${this.fisrtName} ${this.lastName}, i am ${this.age} years old.`;
+  }
+}
+
+const myData = new Data("Abhi", "Singh", 22);
+console.log(myData.noramlInformation());
+
+class EdData extends Data {
+  constructor(fisrtName, lastName, age, percentage) {
+    super(fisrtName, lastName, age);
+    this.percentage = percentage;
+  }
+
+  marks() {
+    return this.noramlInformation() + " My percentage is " + this.percentage;
+  }
+}
+
+const myEdData = new EdData("Abhishek", "Singh", 22, 83.2);
+console.log(myEdData.marks());
