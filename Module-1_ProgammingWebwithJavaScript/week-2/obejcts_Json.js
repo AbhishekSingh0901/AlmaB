@@ -28,7 +28,7 @@
 // console.log(student["marks"]["maths"]);
 
 //Set - is a collection of unique value and does not have any duplicate values
-const letters = new Set(["a", "b", "c"]);
+const letters = new Set(['a', 'b', 'c']);
 
 // //to add a value
 // letters.add("d");
@@ -57,27 +57,27 @@ const letters = new Set(["a", "b", "c"]);
 //Map:
 
 const percentage = new Map([
-  ["John", 92],
-  ["Jane", 96],
-  ["kevin", 75],
-  ["robin", 56],
-  ["liz", 89],
+  ['John', 92],
+  ['Jane', 96],
+  ['kevin', 75],
+  ['robin', 56],
+  ['liz', 89],
 ]);
 
 //or
 
 const percentage2 = new Map();
 
-percentage2.set("John", 92);
-percentage2.set("Jane", 96);
+percentage2.set('John', 92);
+percentage2.set('Jane', 96);
 
-console.log(percentage2.get("John"));
+console.log(percentage2.get('John'));
 
 percentage2.clear();
 
 console.log(percentage2);
 
-percentage.delete("John");
+percentage.delete('John');
 console.log(percentage);
 
 console.log(percentage.entries());
@@ -85,14 +85,14 @@ console.log(percentage.entries());
 // JSON object
 
 const data = {
-  name: "John",
+  name: 'John',
   age: 22,
   hobby: {
     reading: true,
     gaming: false,
-    sport: "football",
+    sport: 'football',
   },
-  class: ["JavaScript", "HTML", "CSS"],
+  class: ['JavaScript', 'HTML', 'CSS'],
 };
 
 const JsonData = JSON.stringify(data);
@@ -148,11 +148,11 @@ console.log(data.class[1]); // HTML
 // console.log(Aname, jobTitle, work);
 
 const jonas = {
-  firstName: "Jonas",
-  lastName: "Singh",
+  firstName: 'Jonas',
+  lastName: 'Singh',
   age: 2022 - 2000,
-  job: "Student",
-  friends: ["Michael", "Peter", "Steven"],
+  job: 'Student',
+  friends: ['Michael', 'Peter', 'Steven'],
 };
 
 //challenge is to write "Jonas has 3 Friends, and his best friend is called Michael"
