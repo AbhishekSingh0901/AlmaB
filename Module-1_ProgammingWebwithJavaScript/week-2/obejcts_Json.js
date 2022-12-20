@@ -146,3 +146,17 @@ console.log(data.class[1]); // HTML
 
 // const { Aname, jobTitle, work } = userActivity3;
 // console.log(Aname, jobTitle, work);
+
+const jonas = {
+  firstName: "Jonas",
+  lastName: "Singh",
+  age: 2022 - 2000,
+  job: "Student",
+  friends: ["Michael", "Peter", "Steven"],
+};
+
+//challenge is to write "Jonas has 3 Friends, and his best friend is called Michael"
+
+console.log(
+  `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`
+);
